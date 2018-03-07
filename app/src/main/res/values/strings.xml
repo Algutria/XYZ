@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Manillas XYZ</string>
+    <string name="title">Calculadora de valor de Manillas</string>
+    <string name="material_type_label">Material</string>
+    <string name="pendant_type_label">Dije</string>
+    <string name="metal_type_label">Tipo de Metal</string>
+    <string name="currency_type_label">Tipo de Moneda</string>
+    <string name="calculate">Calcular</string>
+    <string name="clear">Limpiar</string>
+    <string name="result" />
+    <string name="quantity_label">Cantidad</string>
+</resources>
