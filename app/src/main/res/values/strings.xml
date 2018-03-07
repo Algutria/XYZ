@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Manillas XYZ</string>
-    <string name="title">Calculadora de valor de Manillas</string>
+    <string name="title">Calculadora de precio de Manillas</string>
     <string name="material_type_label">Material</string>
     <string name="pendant_type_label">Dije</string>
     <string name="metal_type_label">Tipo de Metal</string>
@@ -9,4 +9,40 @@
     <string name="clear">Limpiar</string>
     <string name="result" />
     <string name="quantity_label">Cantidad</string>
+
+    <string name="leather">Cuero</string>
+    <string name="rope">Cuerda</string>
+
+    <string name="hammer">Martillo</string>
+    <string name="anchor">Ancla</string>
+
+    <string name="gold">Oro</string>
+    <string name="rose_gold">Oro Rosa</string>
+    <string name="silver">Plata</string>
+    <string name="nickel">Niquel</string>
+
+    <string name="USD">USD</string>
+    <string name="COP">COP</string>
+
+    <string-array name="materials_list">
+        <item>@string/leather</item>
+        <item>@string/rope</item>
+    </string-array>
+
+    <string-array name="pendants_list">
+        <item>@string/hammer</item>
+        <item>@string/anchor</item>
+    </string-array>
+
+    <string-array name="metals_list">
+        <item>@string/gold</item>
+        <item>@string/rose_gold</item>
+        <item>@string/silver</item>
+        <item>@string/nickel</item>
+    </string-array>
+
+    <string-array name="payment_methods_list">
+        <item>@string/USD</item>
+        <item>@string/COP</item>
+    </string-array>
 </resources>

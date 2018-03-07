@@ -29,13 +29,13 @@
         android:textSize="16sp" />
 
     <EditText
+        android:id="@+id/txtQuantity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
         android:layout_marginBottom="7sp"
+        android:ems="10"
         android:hint="@string/quantity_label"
-        android:inputType="textPersonName"
-        android:text="Name" />
+        android:inputType="textPersonName" />
 
     <TextView
         android:id="@+id/materialTypeLabel"
@@ -104,6 +104,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="calculate"
             android:text="@string/calculate" />
 
         <Button

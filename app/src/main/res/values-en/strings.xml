@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Manillas XYZ</string>
+    <string name="USD">USD</string>
+    <string name="title">Bracelet Price Calculator</string>
+    <string name="material_type_label">Material</string>
+    <string name="pendant_type_label">Pendant</string>
+    <string name="metal_type_label">Metal Type</string>
+    <string name="currency_type_label">Currency Type</string>
+    <string name="calculate">Calculate</string>
+    <string name="clear">Clear</string>
+    <string name="quantity_label">Quantity</string>
+    <string name="leather">Leather</string>
+    <string name="rope">Rope</string>
+    <string name="hammer">Hammer</string>
+    <string name="anchor">Anchor</string>
+    <string name="gold">Gold</string>
+    <string name="rose_gold">Rose Gold</string>
+    <string name="silver">Silver</string>
+    <string name="nickel">Nickel</string>
+    <string name="COP">COP</string>
+</resources>
