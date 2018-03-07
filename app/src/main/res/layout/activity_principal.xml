@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:paddingVertical="20sp"
-    android:paddingHorizontal="15sp"
+    android:padding="15sp"
     android:fontFamily="sans-serif"
     tools:context="com.xyzmanillas.manillasxyz.Principal">
 
@@ -24,7 +23,7 @@
         android:id="@+id/quantityLabel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="7sp"
+        android:layout_marginBottom="4sp"
         android:text="@string/quantity_label"
         android:textSize="16sp" />
 
@@ -32,10 +31,10 @@
         android:id="@+id/txtQuantity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="7sp"
+        android:layout_marginBottom="10sp"
         android:ems="10"
         android:hint="@string/quantity_label"
-        android:inputType="textPersonName" />
+        android:inputType="numberDecimal" />
 
     <TextView
         android:id="@+id/materialTypeLabel"
@@ -43,19 +42,19 @@
         android:layout_height="wrap_content"
         android:text="@string/material_type_label"
         android:textSize="16sp"
-        android:layout_marginBottom="7sp" />
+        android:layout_marginBottom="4sp" />
 
     <Spinner
         android:id="@+id/materialsSpinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15sp" />
+        android:layout_marginBottom="10sp" />
 
     <TextView
         android:id="@+id/pendantTypeLabel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="7sp"
+        android:layout_marginBottom="4sp"
         android:text="@string/pendant_type_label"
         android:textSize="16sp" />
 
@@ -63,13 +62,13 @@
         android:id="@+id/pendantsSpinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15sp" />
+        android:layout_marginBottom="10sp" />
 
     <TextView
         android:id="@+id/metalTypeLabel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="7sp"
+        android:layout_marginBottom="4sp"
         android:text="@string/metal_type_label"
         android:textSize="16sp" />
 
@@ -77,13 +76,13 @@
         android:id="@+id/metalTypesSpinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15sp" />
+        android:layout_marginBottom="10sp" />
 
     <TextView
         android:id="@+id/currencyTypeLabel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="7sp"
+        android:layout_marginBottom="4sp"
         android:text="@string/currency_type_label"
         android:textSize="16sp" />
 
@@ -91,13 +90,13 @@
         android:id="@+id/currencyTypesSpinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="15sp" />
+        android:layout_marginBottom="10sp" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:paddingBottom="15sp" >
+        android:paddingBottom="10sp" >
 
         <Button
             android:id="@+id/calculateButton"
@@ -112,6 +111,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="clear"
             android:text="@string/clear" />
     </LinearLayout>
 
@@ -119,6 +119,8 @@
         android:id="@+id/result"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20sp"
         android:text="@string/result" />
 
 </LinearLayout>

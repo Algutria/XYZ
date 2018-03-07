@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Manillas XYZ</string>
-    <string name="USD">USD</string>
+
     <string name="title">Bracelet Price Calculator</string>
     <string name="material_type_label">Material</string>
     <string name="pendant_type_label">Pendant</string>
@@ -19,4 +19,6 @@
     <string name="silver">Silver</string>
     <string name="nickel">Nickel</string>
     <string name="COP">COP</string>
+    <string name="USD">USD</string>
+    <string name="blank_quantity">Please, type quantity</string>
 </resources>
