@@ -5,13 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
-
 import java.text.NumberFormat;
-import java.util.Locale;
 
 public class Principal extends AppCompatActivity {
 
@@ -22,7 +19,6 @@ public class Principal extends AppCompatActivity {
             pendantsSpinner,
             metalTypesSpinner,
             currencyTypesSpinner;
-    private Button calculateButton, clearButton;
     private String materials[], pendants[], metalTypes[], currencyTypes[];
 
     @Override
@@ -38,9 +34,6 @@ public class Principal extends AppCompatActivity {
         pendantsSpinner = findViewById(R.id.pendantsSpinner);
         metalTypesSpinner = findViewById(R.id.metalTypesSpinner);
         currencyTypesSpinner = findViewById(R.id.currencyTypesSpinner);
-
-        calculateButton = findViewById(R.id.calculateButton);
-        clearButton = findViewById(R.id.clearButton);
 
         materials = resources.getStringArray(R.array.materials_list);
         pendants = resources.getStringArray(R.array.pendants_list);
@@ -146,11 +139,17 @@ public class Principal extends AppCompatActivity {
                     break;
             }
 
-            result.setText("$" + NumberFormat.getNumberInstance().format(totalValue));
+            result.setText(resources.getString(R.string.total_price) + " $" + NumberFormat.getNumberInstance().format(totalValue));
         }
     }
 
     public boolean validQuantity() {
+        if (Integer.parseInt(quantity.getText().toString()) == 0) {
+            quantity.requestFocus();
+            quantity.setError(resources.getString(R.string.quantity_greater_than_zero));
+            return false;
+        }
+
         if (quantity.getText().toString().trim().isEmpty()) {
             quantity.requestFocus();
             quantity.setError(resources.getString(R.string.blank_quantity));

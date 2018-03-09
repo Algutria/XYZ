@@ -21,4 +21,8 @@
     <string name="COP">COP</string>
     <string name="USD">USD</string>
     <string name="blank_quantity">Please, type quantity</string>
+    <string name="invalid_quantity">Please, type a valid value</string>
+    <string name="total_price">Total Price:</string>
+    <string name="quantity_greater_than_zero">The quantity must be greater than zero</string>
+
 </resources>
