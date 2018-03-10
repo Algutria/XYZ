@@ -6,7 +6,7 @@ public class Methods {
         double result = price * cant;
 
         if (paymentMethodIndex == 1) { // that means that the user selected "Pesos"
-            result*= 3200;
+            result *= 3200;
         }
 
         return result;

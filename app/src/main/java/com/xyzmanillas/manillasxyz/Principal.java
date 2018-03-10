@@ -56,7 +56,7 @@ public class Principal extends AppCompatActivity {
     public void calculate(View v) {
         result.setText("");
 
-        if (validQuantity()) {
+        if (isQuantityValid()) {
             double cant = Double.parseDouble(quantity.getText().toString());
             double totalValue = 0;
             int selectedMaterial, selectedPendant, selectedMetal, paymentMethod;
@@ -139,20 +139,22 @@ public class Principal extends AppCompatActivity {
                     break;
             }
 
-            result.setText(resources.getString(R.string.total_price) + " $" + NumberFormat.getNumberInstance().format(totalValue));
+            String totalPrinceText = resources.getString(R.string.total_price);
+            String resultMessage = totalPrinceText  + " $" + NumberFormat.getNumberInstance().format(totalValue);
+            result.setText(resultMessage);
         }
     }
 
-    public boolean validQuantity() {
-        if (Integer.parseInt(quantity.getText().toString()) == 0) {
-            quantity.requestFocus();
-            quantity.setError(resources.getString(R.string.quantity_greater_than_zero));
-            return false;
-        }
-
+    public boolean isQuantityValid() {
         if (quantity.getText().toString().trim().isEmpty()) {
             quantity.requestFocus();
             quantity.setError(resources.getString(R.string.blank_quantity));
+            return false;
+        }
+
+        if (Integer.parseInt(quantity.getText().toString()) == 0) {
+            quantity.requestFocus();
+            quantity.setError(resources.getString(R.string.quantity_greater_than_zero));
             return false;
         }
 

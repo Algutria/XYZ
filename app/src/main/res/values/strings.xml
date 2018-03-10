@@ -1,4 +1,6 @@
 <resources>
+
+    <!-- Principal activity -->
     <string name="app_name">Manillas XYZ</string>
     <string name="title">Calculadora de precio de Manillas</string>
     <string name="material_type_label">Material</string>
@@ -9,14 +11,10 @@
     <string name="clear">Limpiar</string>
     <string name="result" />
     <string name="quantity_label">Cantidad</string>
-
-    <string name="blank_quantity">Por favor, digite la cantidad</string>
-    <string name="invalid_quantity">Por favor, digite un valor valido</string>
-    <string name="quantity_greater_than_zero">La cantidad debe ser mayor a cero</string>
-
     <string name="total_price">Precio Total:</string>
 
 
+    <!-- Arrays options -->
     <string name="leather">Cuero</string>
     <string name="rope">Cuerda</string>
 
@@ -31,6 +29,7 @@
     <string name="COP">COP</string>
     <string name="USD">USD</string>
 
+    <!-- Arrays -->
     <string-array name="materials_list">
         <item>@string/leather</item>
         <item>@string/rope</item>
@@ -52,4 +51,8 @@
         <item>@string/USD</item>
         <item>@string/COP</item>
     </string-array>
+
+    <!-- Validation errors -->
+    <string name="blank_quantity">Por favor, digite la cantidad</string>
+    <string name="quantity_greater_than_zero">La cantidad debe ser mayor a cero</string>
 </resources>
